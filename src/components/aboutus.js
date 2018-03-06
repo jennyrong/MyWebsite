@@ -5,7 +5,7 @@ export default class AboutUs extends Component {
     render(){
         return(
         <div>
-            <h3>About Us</h3>
+            <div className="heading">About Us</div>
             <Link to="/index">
                Back to index page
             </Link>
