@@ -5,7 +5,7 @@ export default class Jobs extends Component {
     render(){
         return(
             <div>
-                <h3>Jobs</h3>
+                <div className="heading">Jobs</div>
                 <Link to="/index">
                    Back to index page
                 </Link>
