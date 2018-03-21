@@ -1,0 +1,279 @@
+
+ul {
+    background-color: rgba(48, 48, 48, 0.8);
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 40px; 
+    top:0;
+    width: 100%;
+}
+
+.logo {
+    font-family: "Helvetica neue",Helvetica,Arial,Sans-serif;
+    font-size: 1.4em;
+    font-weight: 400;
+    color: rgba(47, 255, 141, 0.863);
+    padding: 8px;
+}
+
+
+.heading {
+    font-size: 17pt;
+    font-family: "Helvetica neue",Helvetica,Arial,Sans-serif;
+    margin-top: 9px;
+    margin-left: 9px;
+    padding: 12px;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    color: #7d7d7e;
+    /*box-sizing: border-box;*/
+    border-top: 2px solid #7d7d7e93;
+    border-bottom: 2px solid #7d7d7e93;
+}
+
+
+li a{
+    font-family: "Helvetica neue",Helvetica,Arial,Sans-serif;
+    font-weight: 400;
+    color: rgba(245, 245, 245, 0.906);
+    padding: 25px;  
+    text-decoration: none;
+    line-height: 30px;
+    vertical-align: middle;
+}
+
+
+li div {
+    display: none;
+    position: absolute;
+    padding: 0px;
+    top: 40px;
+    color: rgba(245, 245, 245, 0.906);
+}
+
+
+li a:hover{
+    color: white;
+}
+
+
+li:hover div {
+    background-color: rgba(48, 48, 48, 0.8);
+    display: block;
+    text-decoration: none;
+    z-index: 1;
+}
+
+
+li div a{
+    color: rgba(245, 245, 245, 0.906);
+    font-family: "Helvetica neue",Helvetica,Arial,Sans-serif;
+    font-weight: 400;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+li div a:hover {
+    color: rgba(47, 255, 141, 0.863);
+}
+
+
+.logo, div ~ li {
+    display: inline-block;
+}
+
+
+
+/* contactus CSS */
+
+.email, .name, .comment {
+    padding: 20px;
+    color: gray;
+    font-weight: 450;
+    font-family: "Helvetica neue",Helvetica,Arial,Sans-serif;
+}
+
+.name, .name-input {
+    display: inline-block;
+}
+
+.email, .email-input {
+    display: inline-block;
+}
+
+.comment-input {
+    height: 80px;
+}
+
+
+.comment, .comment-input {
+    display: inline-block;
+    
+}
+
+#inputBar, #textarea {
+    color: black;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1.5px;
+    border-color: lightgrey;
+    font-size: 15px;
+    outline: none;
+    -webkit-transition: 0.5s;
+    
+}
+
+#inputBar:focus, #textarea:focus{
+    /*border-color: rgb(82, 178, 238);*/
+    border-color: rgba(255, 166, 0, 0.726);
+ }
+
+
+input[type=submit], input[type=reset] {
+    background-color: rgb(13, 179, 21);
+    color: white;
+    padding: 8px;  
+    margin-left: 18px;
+    border-radius: 4px;
+    font-size: 12px;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+input[type=reset]:hover, input[type=submit]:hover {
+    background-color: rgba(33, 184, 40, 0.8);
+    -webkit-transition: 0.5s;
+}
+
+
+/* counter practice css */
+.red {
+   background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+ }
+
+ .green {
+    background-color: green;
+ }
+
+
+
+
+ /* Carousel CSS */
+
+ * {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.img { 
+    vertical-align: middle;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+.fade2 {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 0.45s;
+    animation-name: fade;
+    animation-duration: 0.45s;
+}
+
+
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 0.9}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 0.9}
+}
