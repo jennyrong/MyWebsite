@@ -7,7 +7,7 @@ export default class Locations extends Component {
     render(){
         return(
             <div>
-                <div className="heading">Locations 2</div>
+                <div className="heading">Locations 3</div>
                 
                 <Counter />
                 <Link to="/index">
