@@ -10,21 +10,22 @@ export default class ContactUs extends Component {
             <div>
             <div className="heading">Contact Us</div>
             <form action="mailto:conneyrong@gmail.com" method="post" enctype="text/plain">
+                
                 <div className="name">  
-                  Name:<br/>
-                </div>  
-                <input id="inputBar" type="text" name="name" className="name-input"/><br/>
+                   <label for="name">Name:</label>
+                   <input id="name" type="text" name="name"/><br/>
+                </div>
 
                 <div className="email">
-                  E-mail:<br/>
+                   <label for="email">E-mail:</label> 
+                   <input id="email" type="email" name="mail" /><br/>
                 </div>
-                <input id="inputBar" type="text" name="mail" className="email-input"/><br/>
 
                 <div className="comment">
-                  Comment:
-                </div>  
-                
-                <textarea id="textarea" name="comment"  className="comment-input"/><br/>
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment" /><br/>
+                </div>
+
 
                 <input type="submit" value="Send"/>
                 <input type="reset" value="Reset"/>
