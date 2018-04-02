@@ -13,25 +13,24 @@ export default class ContactUs extends Component {
                 
                 <div className="name">  
                    <label for="name">Name:</label>
-                   <input id="name" type="text" name="user_name" /><br/>
+                   <input id="name" type="text" name="user_name" />
                 </div>
 
                 <div className="email">
                    <label for="email">E-mail:</label> 
-                   <input id="email" type="email" name="user_mail" /><br/>
+                   <input id="email" type="email" name="user_mail" />
                 </div>
 
                 <div className="comment">
                     <label for="comment">Comment:</label>
-                    <textarea id="comment" name="user_comment" /><br/>
+                    <textarea id="comment" name="user_comment" />
                 </div>
-
 
                 <input type="submit" value="Send"/>
                 <input type="reset" value="Reset"/>
             </form>     
                 <Link className="linkstyle" to="/index">Back to index page</Link> 
-            ;</div>
+            </div>
         );
     }
 }
