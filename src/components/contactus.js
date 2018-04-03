@@ -13,17 +13,17 @@ export default class ContactUs extends Component {
                 
                 <div className="name">  
                    <label for="name">Name:</label>
-                   <input id="name" type="text" name="user_name" />
+                   <input id="name" type="text" name="user_name" required/>
                 </div>
 
                 <div className="email">
                    <label for="email">E-mail:</label> 
-                   <input id="email" type="email" name="user_mail" />
+                   <input id="email" type="email" name="user_mail" required/>
                 </div>
 
                 <div className="comment">
                     <label for="comment">Comment:</label>
-                    <textarea id="comment" name="user_comment" />
+                    <textarea id="comment" name="user_comment" required/>
                 </div>
 
                 <input type="submit" value="Send"/>
