@@ -9,41 +9,7 @@ export default class Carousel extends Component {
             this.showSlides = this.showSlides.bind(this);
         }
 
-       /* componentDidMount(){
-            this.showSlides(this.state.slideIndex);
-        }
-        //showSlides(slideIndex);
-
-        // Next/previous controls
-        plusSlides(n) {
-            this.showSlides(this.state.slideIndex + n);
-        }
-
-        // Thumbnail image controls
-        currentSlide(n) {
-            this.showSlides(n);
-        }
-
-        showSlides(n) {
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-
-            if (n > slides.length) {
-                slideIndex = 1
-            } 
-            if (n < 1) {
-                slideIndex = slides.length
-            }
-                for (var i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none"; 
-                }
-                for (var i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-
-            slides[this.state.slideIndex-1].style.display = "block"; 
-            dots[this.state.slideIndex-1].className += " active";
-        } */
+       
 
     componentDidMount(){
         const slides = document.getElementsByClassName("mySlides");
