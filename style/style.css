@@ -1,4 +1,12 @@
 
+footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    font-family: "Helvetica neue",Helvetica,Arial,Sans-serif;
+}
+
 ul {
     background-color: rgba(48, 48, 48, 0.8);
     text-align: left;
@@ -89,6 +97,7 @@ li div a:hover {
 
 /* contactus CSS */
 
+
 .email, .name, .comment {
     padding: 20px;
     color: gray;
@@ -96,25 +105,13 @@ li div a:hover {
     font-family: "Helvetica neue",Helvetica,Arial,Sans-serif;
 }
 
-.name, .name-input {
-    display: inline-block;
-}
 
-.email, .email-input {
-    display: inline-block;
-}
-
-.comment-input {
+#comment {
     height: 80px;
 }
 
 
-.comment, .comment-input {
-    display: inline-block;
-    
-}
-
-#inputBar, #textarea {
+#name, #email, #comment {
     color: black;
     border-style: solid;
     border-radius: 10px;
@@ -126,9 +123,14 @@ li div a:hover {
     
 }
 
-#inputBar:focus, #textarea:focus{
-    /*border-color: rgb(82, 178, 238);*/
+
+#name:focus, #email:focus, #comment:focus{
     border-color: rgba(255, 166, 0, 0.726);
+ }
+
+
+ .name label, .email label, .comment label{
+    padding-right: 15px;
  }
 
 
