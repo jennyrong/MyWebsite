@@ -4,7 +4,7 @@ export default class GoogleMap extends Component {
    
    componentDidMount(){ 
         new google.maps.Map(this.refs.map,{
-            zoom:12,
+            zoom:13,
             center: {
                 lat: -34.397,
                 lng: 150.644
