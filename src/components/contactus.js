@@ -8,7 +8,7 @@ export default class ContactUs extends Component {
         
         return(
             <div>
-            <div className="heading">Contact Us2</div>
+            <div className="heading">Contact Us</div>
             <form action="mailto:conneyrong@gmail.com" method="post" enctype="text/plain">
                 
                 <div className="name">  
